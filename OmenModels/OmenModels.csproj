@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -9,10 +9,10 @@
 	  <PackageDescription>Data models for the Omen table-top roleplaying game.</PackageDescription>
 
 	  <!-- The URL where the code is stored -->
-	  <RepositoryUrl>https://github.com/MyOrg/MyLibrary</RepositoryUrl>
+	  <RepositoryUrl>https://github.com/andrewettensohn/OmenModels</RepositoryUrl>
 
 	  <!-- The URL where the NuGet package should be uploaded -->
-	  <PackageProjectUrl>https://github.com/MyOrg/MyLibrary</PackageProjectUrl>
+	  <PackageProjectUrl>https://github.com/andrewettensohn/OmenModels</PackageProjectUrl>
 
 	  <!-- Use the type "git" for GitHub repositories -->
 	  <RepositoryType>git</RepositoryType>
@@ -24,6 +24,24 @@
 	  <!-- Authorship metadata -->
 	  <Company>Andrew Ettensohn</Company>
 	  <Authors>Andrew Ettensohn</Authors>
+	  
+	  <AssemblyVersion>1.0.*</AssemblyVersion>
+	  <Deterministic>false</Deterministic>
+
+	  <GenerateNuspecDependsOn>$(GenerateNuspecDependsOn);ReadPackageVersionFromOutputAssembly</GenerateNuspecDependsOn>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include=".github\workflows\" />
+  </ItemGroup>
+
+	<Target Name="ReadPackageVersionFromOutputAssembly" DependsOnTargets="Build">
+		<GetAssemblyIdentity AssemblyFiles="$(TargetPath)">
+			<Output TaskParameter="Assemblies" ItemName="PackAssembly" />
+		</GetAssemblyIdentity>
+		<PropertyGroup>
+			<PackageVersion>%(PackAssembly.Version)</PackageVersion>
+		</PropertyGroup>
+	</Target>
 
 </Project>
