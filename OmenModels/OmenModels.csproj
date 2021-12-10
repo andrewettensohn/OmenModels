@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+	  <!-- A description for the NuGet package -->
+	  <PackageDescription>Data models for the Omen table-top roleplaying game.</PackageDescription>
+
+	  <!-- The URL where the code is stored -->
+	  <RepositoryUrl>https://github.com/MyOrg/MyLibrary</RepositoryUrl>
+
+	  <!-- The URL where the NuGet package should be uploaded -->
+	  <PackageProjectUrl>https://github.com/MyOrg/MyLibrary</PackageProjectUrl>
+
+	  <!-- Use the type "git" for GitHub repositories -->
+	  <RepositoryType>git</RepositoryType>
+
+	  <!-- This setting disables automatically creating a NuGet package locally after each successful build.
+         We can turn this off since we want GitHub Actions to manage our repo packages -->
+	  <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+
+	  <!-- Authorship metadata -->
+	  <Company>Andrew Ettensohn</Company>
+	  <Authors>Andrew Ettensohn</Authors>
+  </PropertyGroup>
+
+</Project>
