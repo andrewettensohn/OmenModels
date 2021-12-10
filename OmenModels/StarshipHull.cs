@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OmenModels.Interfaces;
 
 namespace OmenModels
 {
-    public class StarshipHull
+    public class StarshipHull : IGuidId
     {
+        public Guid Id { get; set; }
+
         public string Name { get; set; }
 
         public string Description { get; set; }
