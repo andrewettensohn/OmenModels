@@ -10,13 +10,7 @@ namespace OmenModels
 
         public string Name { get; set; }
 
-        public string Description { get; set; }
-
-        public int Hitpoints { get; set; }
-
-        public int Value { get; set; }
-
-        public string SpecialAbility { get; set; }
+        public StarshipHull Hull { get; set; }
 
         public StarshipClass StarshipClass { get; set; }
 
