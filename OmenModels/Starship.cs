@@ -1,9 +1,10 @@
-﻿using System;
+﻿using OmenModels.Interfaces;
+using System;
 using System.Collections.Generic;
 
 namespace OmenModels
 {
-    public class Starship
+    public class Starship : IGuidId
     {
         public Guid Id { get; set; }
 

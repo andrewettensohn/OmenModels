@@ -1,8 +1,9 @@
-﻿using System;
+﻿using OmenModels.Interfaces;
+using System;
 
 namespace OmenModels
 {
-    public class StarshipClass
+    public class StarshipClass : IGuidId
     {
         public Guid Id { get; set; }
 

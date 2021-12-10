@@ -1,8 +1,9 @@
-﻿using System;
+﻿using OmenModels.Interfaces;
+using System;
 
 namespace OmenModels
 {
-    public class ShipModule
+    public class ShipModule : IGuidId
     {
         public Guid Id { get; set; }
 
