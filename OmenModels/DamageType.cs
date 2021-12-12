@@ -2,6 +2,7 @@
 {
     public enum DamageType
     {
+        None,
         Plasma,
         Railgun,
         Projectile,
