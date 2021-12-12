@@ -15,7 +15,7 @@ namespace OmenModels
 
         public int PowerRequirement { get; set; }
 
-        public DamageType? DamageType { get; set; }
+        public DamageType DamageType { get; set; }
 
         public int Damage { get; set; }
 
