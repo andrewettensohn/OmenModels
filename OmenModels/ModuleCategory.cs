@@ -8,6 +8,7 @@
         Armor,
         Engine,
         BlackOps,
-        Sensor
+        Sensor,
+        EmptySlot
     }
 }
