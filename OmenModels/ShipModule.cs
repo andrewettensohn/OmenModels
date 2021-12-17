@@ -1,5 +1,6 @@
 ﻿using OmenModels.Interfaces;
 using System;
+using System.Text.Json.Serialization;
 
 namespace OmenModels
 {
@@ -41,5 +42,7 @@ namespace OmenModels
 
         public bool IsIllegal { get; set; }
 
+        [JsonIgnore]
+        public List<Starship> Starships { get; set; }
     }
 }
