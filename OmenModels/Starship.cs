@@ -14,6 +14,6 @@ namespace OmenModels
 
         public StarshipClass StarshipClass { get; set; }
 
-        public List<ShipModule> Modules { get; set; }
+        public List<ShipModule>? Modules { get; set; }
     }
 }
