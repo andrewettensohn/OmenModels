@@ -43,6 +43,6 @@ namespace OmenModels
         public bool IsIllegal { get; set; }
 
         [JsonIgnore]
-        public List<Starship> Starships { get; set; }
+        public List<Starship>? Starships { get; set; }
     }
 }
