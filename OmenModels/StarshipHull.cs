@@ -1,10 +1,13 @@
-﻿using OmenModels.Interfaces;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace OmenModels
 {
-    public class StarshipHull : IGuidId
+    public class StarshipHull
     {
-        public Guid Id { get; set; }
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string? Id { get; set; }
 
         public string Name { get; set; }
 

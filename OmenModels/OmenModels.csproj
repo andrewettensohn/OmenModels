@@ -35,6 +35,10 @@
     <Folder Include=".github\workflows\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Bson" Version="2.14.1" />
+  </ItemGroup>
+
 	<Target Name="ReadPackageVersionFromOutputAssembly" DependsOnTargets="Build">
 		<GetAssemblyIdentity AssemblyFiles="$(TargetPath)">
 			<Output TaskParameter="Assemblies" ItemName="PackAssembly" />
