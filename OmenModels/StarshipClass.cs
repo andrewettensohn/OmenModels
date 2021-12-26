@@ -17,5 +17,7 @@ namespace OmenModels
         public int Slots { get; set; }
 
         public int BaseStealth { get; set; }
+
+        public int BaseSpeed { get; set; }
     }
 }
