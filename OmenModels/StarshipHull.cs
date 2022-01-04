@@ -18,5 +18,7 @@ namespace OmenModels
         public int Value { get; set; }
 
         public string SpecialAbility { get; set; }
+
+        public StarshipClass Class { get; set; }
     }
 }

@@ -39,6 +39,8 @@ namespace OmenModels
 
         public int MissileSpeed { get; set; }
 
+        public int MissileHealth { get; set; }
+
         public int Value { get; set; }
 
         public int Stealth { get; set; }
