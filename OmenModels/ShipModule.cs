@@ -49,5 +49,7 @@ namespace OmenModels
 
         public bool IsIllegal { get; set; }
 
+        public int AoE { get; set; }
+
     }
 }
